@@ -5,9 +5,6 @@ import json
 app=Flask(__name__)
 @app.route('/')
 def index():
-    r=requests.get("http://api.icndb.com/jokes/random")
-    data=json.loads(r.text)
-    joke=data['value']['joke']
-    return render_template('index.html',joke=joke)
+    return render_template('index.html')
 
 app.run(debug=True)
