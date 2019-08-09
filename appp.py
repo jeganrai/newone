@@ -8,7 +8,7 @@ def index():
     return render_template('index.html')
 @app.route('/ram/')
 def iram():
-    return "hello"
+    return render_template('ram.html')
 
 
 
